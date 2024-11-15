@@ -1,0 +1,279 @@
+
+body {
+    margin: 0;
+    background-color: darkslategray;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+
+.topBar {
+    margin: 0;
+    width: 100%;
+    height: 3em;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    overflow-x: scroll;
+    border-bottom: 3px black solid;
+}
+.topBar img {
+    height: 3em;
+    width: auto;
+}
+.subbar{
+    height: 1.5em;
+    margin:0;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+.subbar p{
+    display:inline-block;
+    margin: 0;
+    font-size: 0.9em;
+    text-align:center;
+    color:rgb(55, 66, 87);
+    border-right:rgb(32, 32, 32) 2px solid;
+    padding: 0 auto;
+    width: 10em;
+}
+
+.subbar p:first-of-type{
+    color: blue;
+}
+
+
+.topBar p {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    padding-bottom: 50px;
+    padding-left: 75px;
+}
+
+.topBar .left p:first-of-type {
+    padding-left: 50px;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.topBar .left p:nth-of-type(n + 2) {
+    position: inherit;
+    bottom: 10px;
+    color: red;
+}
+
+.topBar .left p:last-of-type {
+    padding-left: 40px;
+}
+
+.left {
+    display: inline-block;
+}
+
+
+.right {
+    box-sizing: border-box;
+    position: absolute;
+    float: right;
+    right: 1.2em;
+    bottom: 1.9em;
+    color: slateblue;
+    margin: 0;
+    background-color: rgb(32, 32, 32);
+    border: 3px solid grey;
+    padding: 7px;
+}
+
+.right:last-of-type {
+    right: 8em;
+}
+.right img{
+    height:22px;
+    width:auto;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    overflow: scroll;
+    background-color: grey;
+
+}
+
+main section > p{
+    margin: 0 35px;
+    padding: 10px 7px;
+    border-left: 3px solid darkgrey;
+}
+
+.bottombox{
+    box-sizing:content-box;
+    padding-bottom: 3px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    margin-bottom: 5px;
+    border-bottom: 3px solid darkgrey;
+}
+
+h1, h2{
+    margin-left: 60px;
+    padding-left: 10px;
+    border-left: 3px solid darkgrey;
+    border-radius: 20px;
+}
+
+.imgsection {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    height: 20em;
+
+}
+.imgtext {
+    display:inline-flex;
+    flex-direction: column-reverse;
+    padding-top: 0;
+}
+
+
+.imgsection p {
+    text-decoration: underline darkgray 2px;
+    overflow:scroll;
+    margin-bottom: 0;
+    
+}
+
+.imgsection img {
+    max-width: 100%;
+    height: 20em;
+    flex: 0 0.7 20em;
+    margin: 0 15px;
+    float: right;
+    border: 10px solid darkgray;
+}
+
+.imgsection label {
+    display: block;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.imgsection .followingtext{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    border-bottom: 2px darkgrey double;
+    padding-left: 80%;
+    padding-right: 4%;
+    padding-bottom: 10px;
+    margin-right: 1%;
+}
+
+.listcontainer{
+    display: flex;
+    flex-direction:column-reverse;
+    text-decoration: rgb(0, 122, 122) underline 2px;
+    font-size: 1.05em;
+}
+
+ .listcontainer ol, .listcontainer li{
+ margin-bottom: -2em;   
+    
+}
+
+.listcontainer li{
+    padding-bottom: 2em;
+}
+
+/* .imgsection .followingtext a{
+
+} */
+
+
+main section > p:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+main section > p:first-of-type{ /*swap to main section > p last of type*/
+    padding-top: 0;
+    margin-top: 10px;
+}
+
+
+
+.footer{
+    box-sizing:border-box;
+    background-color: black;
+    color: aliceblue;
+    border-top: 3px solid lightgray;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    height: 3em;
+    margin: 0;
+    overflow:scroll;
+}
+
+.footer p{
+    display:inline;
+    border-bottom:0;
+}
+
+.footer p:first-of-type{
+    display: inline;
+    position: relative;
+    top: 1em;
+    left: 4em;
+    margin-top: 0;
+}
+
+.footer p:last-of-type{
+    display: inline;
+    position: absolute;
+    right: 4em;
+    padding-top: 0;
+}
+
+.copyright{
+    font-style:italic;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .imgsection .followingtext{
+        /* display: none; */
+        display:inherit;
+    }
+
+    .imgtext{
+        flex-direction: column;
+    }
+
+    .imgsection{
+       flex-wrap: wrap-reverse;
+    }
+
+    .imgsection img{
+        margin-right: 5%;
+    }
+
+    .imgsection p{
+        height:auto;
+        padding-left: 5%;
+    }
+
+    .imgsection{
+        height: auto;
+    }
+
+    .imgsection .followingtext a{
+        margin-right: 15em;
+    }
+
+    .listcontainer ul, .listcontainer ol{
+        position: inherit;
+        bottom: 20em;
+    }
+}
