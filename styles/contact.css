@@ -11,14 +11,49 @@ body{
     width: 100%;
     height: 3em;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: black;
+    background-color: white;
+    border-bottom: solid lightblue 1px;
+}
+
+.topbar p{
+    position: relative;
+    color: black;
+    top: calc(50% - 0.7em);
+    display: inline;
+    margin-right: 5%;
+    font-size: 15px;
+}
+
+.selected{
+    border-bottom: darkblue solid 4px;
+    border-radius: 2px;
+    padding-bottom: 1.4em;
+    margin-bottom: -1.4em;
 }
 
 .tertiary{
     height: 5em;
-    background-color: red;
+    background-color: white;
+    min-width:max-content;
+    overflow:auto;
+    white-space: nowrap; 
+    display:flex;
+    flex-direction: row;
+    justify-items:center;
+    margin-left: 0;
+}
+
+.tertiary img{
+    margin-left: 0;
+    display: inline-block;
+    height: 5em;
+
+}
+
+.tertiary p{
+    font-size: 19px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
 }
 
 .mainimage{
@@ -28,6 +63,11 @@ body{
     border: black solid 2px;
     height:450px;
     width:auto;
+}
+
+#mainoptions{
+    display:inline;
+    width:100%;
 }
 
 main{
