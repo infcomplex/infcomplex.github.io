@@ -1,0 +1,203 @@
+body{
+margin: 0;
+background-color: rgb(51, 54, 56);
+}
+
+nav{
+    --viewport-height: 6em;
+    width: 100%;
+    height: var(--viewport-height);
+    background-color: black;
+    color: white; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav img{
+    height: 75%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: inherit;
+    width: 100%;
+}
+
+.menu p{
+    margin: 0 10px 0 20px;
+}
+
+menu .location, menu .order{
+    justify-self: flex-end;
+}
+
+.divider{
+    background-color:red;
+    width:2px;
+    height: 90%;
+    margin: 0 12px 0 30px;
+    border-radius: 10px;
+}
+
+.divider.small{
+    background-color: red;
+    height: 60%;
+    width:4px;
+    margin: 0 20px 0 20px;
+    
+}
+
+.spacer{
+    width:100%;
+    height: 3em;
+    background-color: inherit;
+}
+
+.wood{
+    display: flex;
+    box-sizing: border-box;
+    height:1em;
+    width:100%;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+.wood div{
+    box-sizing: border-box;
+    height:0.4em;
+    margin:auto;
+    width:99.3%;
+    background-color: rgb(105, 76, 32);
+    border-radius: 5px;
+}
+
+.wood{
+    display: flex;
+    box-sizing: border-box;
+    height:1em;
+    width:100%;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+}
+
+.wood.vertical div{
+    height: 80%;
+    width: 10px;
+    padding-right: 0.2em;
+    box-sizing: border-box;
+    border: 4px solid black;
+    background-color: rgb(105, 76, 32);
+    margin: auto 0;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.images{
+    display:flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y:visible;
+    white-space: nowrap;
+    height: 60vh;
+    width:auto;
+}
+
+.images img{
+}
+
+main{
+    border-top: 10px solid red;
+    width: 90%;
+    justify-self: center;
+    margin: 15px auto 0 auto;
+    background-color: black;
+    height: 30em;
+    color: white;
+}
+
+#mainmenu{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#mainmenu > div{
+    margin: 0 10% 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: inherit;
+    justify-content: inherit;
+    width: 100%;
+}
+
+#mainmenu p{
+    margin: 15px auto;
+}
+
+
+#mainmenu > div:hover{
+    background-color: firebrick;
+}
+
+.menudivider{
+    width: 80%;
+    height: 2px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.tall{
+    width: 2px;
+    height: 140%;
+}
+
+#mainarticle{
+    display: flex;
+    order: row;
+    margin: 15px 20px;
+}
+
+#mainarticle img{
+    height: 25em;
+    margin-right: 10px;
+}
+
+.orderselection{
+    width: 60%;
+    height: 8em;
+    margin: 75px auto;
+    background-color: darkblue;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border: 8px solid gray;
+    border-radius: 15px;
+    font-size: large
+}
+
+.orderselection .orderoptions{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px auto;
+    right: 0.5em;
+}
+
+.orderoptions > p{
+    margin-right: 15px;
+    margin-left: 15px;
+    width:fit-content;
+    text-align: center;
+}
+
+
+.orderselection > p {
+    margin: 15px auto;
+}
+

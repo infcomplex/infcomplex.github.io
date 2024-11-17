@@ -8,7 +8,6 @@ body{
 }
 
 .topbar{
-    width: 100%;
     height: 3em;
     margin: 0;
     background-color: white;
@@ -59,7 +58,7 @@ body{
 .mainimage{
     position:absolute;
     left:0;
-    top: 450px;
+    top: 480px;
     border: black solid 2px;
     height:450px;
     width:auto;
@@ -76,6 +75,7 @@ main{
     height: 500px;
     background-color: white;
     border: black solid 2px;
+    padding: 15px;
     right: 1px;
     top: 400px;
 }
@@ -113,4 +113,18 @@ main{
 .ebeggingctn{
     position:absolute;
     right:5em;
+}
+
+@media screen and (max-width: 1200px)
+{
+    main{
+        position: static;
+        width: 100%;
+    }
+    .mainimage{
+        position: static;
+        width: 80%;
+        height: auto;
+        margin-top: 4px;
+    }
 }
