@@ -3,6 +3,9 @@
     <head>
         <title>Totally Legitimate Bar Website</title>
         <link href="styles/resturantindex.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav>
@@ -41,19 +44,27 @@
         <main>
             <div id="mainmenu">
                 <div>
-                    <p>Steak and Chips</p>
+                    <button class="menubutton" onclick="makeSteakVisible()">
+                        <span>Steak and Chips</span>
+                    </button>
                     <div class="menudivider"></div>
                 </div>
                 <div>
-                    <p>Chef's Specials</p>
+                    <button class="menubutton" onclick="makeSpecialsVisible()">
+                        <span>Chef's Specials</span>
+                        
+                    </button>
                     <div class="menudivider"></div>
                 </div>
                 <div>
-                    <p>Premium Lobster</p>
+                    <button class="menubutton" onclick="makeLobsterVisible()">
+                        <span>Fresh Lobster</span>
+                        
+                    </button>
                     <div class="menudivider"></div>
                 </div>
             </div>
-            <div id="mainarticle">
+            <div class="mainarticle" id="steak">
                 <img src="images/resturantgallery/amirali-mirhashemian-eRyMytuT0yg-unsplash.jpg">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam itaque fugit doloribus, iste debitis commodi cum laborum reiciendis maiores eos cumque hic a amet saepe in eligendi modi. Sequi, neque!</p>
@@ -69,6 +80,23 @@
                     </div>
                 </div>
             </div>
+            <div class="mainarticle" id="specials">
+                <img src="images/resturantgallery/amirali-mirhashemian-eRyMytuT0yg-unsplash.jpg">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam itaque fugit doloribus, iste debitis commodi cum laborum reiciendis maiores eos cumque hic a amet saepe in eligendi modi. Sequi, neque!</p>
+                    <p>aaaaaaaLorem ipsum dolor sit amet consectetur adipisicing elit. Fuga deleniti nihil laboriosam hic sint natus corrupti libero, quasi esse porro a commodi suscipit enim? Suscipit quasi consectetur ipsa est modi.</p>
+                    <div class="orderselection">
+                        <div class="orderoptions">
+                            <p>Order Takeout</p>
+                            <div class="menudivider tall"></div>
+                            <p>Get Delivery</p>
+                        </div>
+                        <div class="menudivider"></div>
+                        <p>Book a Table Now</p>
+                    </div>
+                </div>
+            </div>
+            <script src="scripts/resturant.js"></script>
         </main>
     </body>
 </html>
