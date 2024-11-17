@@ -28,9 +28,20 @@ nav img{
     margin: 0 10px 0 20px;
 }
 
-menu .location, menu .order{
+.location{
+    width: 30%;
+    margin-left:5%;
+}
+
+
+.order{
+    width: 20%;
+}
+.menu .location, .menu .order{
     justify-self: flex-end;
 }
+
+
 
 .divider{
     background-color:red;
