@@ -188,11 +188,11 @@ main{
     width: 60%;
     height: 8em;
     margin: 75px auto;
-    background-color: darkblue;
+    background-color: rgb(48, 24, 24);
     display: flex;
     flex-direction: column;
     justify-items: center;
-    border: 8px solid gray;
+    border: 8px solid rgb(56, 56, 56);
     border-radius: 15px;
     font-size: large
 }
@@ -224,6 +224,7 @@ main{
     border: 0;
     height: 100%;
     color: white;
+    cursor: pointer;
 }
 
 #steak{
